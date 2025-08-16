@@ -11,16 +11,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold gradient-text">LynAI MINES</h3>
             <p className="text-muted-foreground text-sm">
-              革新矿物勘探的AI驱动解决方案提供商，致力于通过先进技术推动可持续采矿发展。
+              AI-driven solutions for mineral exploration, advancing sustainable mining with cutting-edge technology.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -28,48 +28,48 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">快速链接</h4>
+            <h4 className="text-lg font-semibold">Quick Links</h4>
             <nav className="space-y-2">
               <Link to="/about" className="block text-muted-foreground hover:text-primary transition-colors">
-                关于我们
+                About Us
               </Link>
               <Link to="/solutions" className="block text-muted-foreground hover:text-primary transition-colors">
-                解决方案
+                Solutions
               </Link>
               <Link to="/services" className="block text-muted-foreground hover:text-primary transition-colors">
-                服务
+                Services
               </Link>
               <Link to="/case-studies" className="block text-muted-foreground hover:text-primary transition-colors">
-                案例研究
+                Case Studies
               </Link>
             </nav>
           </div>
 
           {/* Resources */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">资源</h4>
+            <h4 className="text-lg font-semibold">Resources</h4>
             <nav className="space-y-2">
               <Link to="/blog" className="block text-muted-foreground hover:text-primary transition-colors">
-                博客
+                Blog
               </Link>
               <Link to="/technical-team" className="block text-muted-foreground hover:text-primary transition-colors">
-                技术团队
+                Technical Team
               </Link>
               <Link to="/events" className="block text-muted-foreground hover:text-primary transition-colors">
-                活动
+                Events
               </Link>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">联系我们</h4>
+            <h4 className="text-lg font-semibold">Contact Us</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-primary" />
                 <span className="text-muted-foreground text-sm">
-                  西澳大利亚州珀斯市<br />
-                  科廷大学科技园区
+                  Perth, Western Australia<br />
+                  Curtin University Technology Park
                 </span>
               </div>
               <div className="flex items-center space-x-3">
@@ -87,17 +87,17 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 LynAI MINES. 保留所有权利。
+            © 2024 LynAI MINES. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              隐私政策
+              Privacy Policy
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              使用条款
+              Terms of Use
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              Cookie政策
+              Cookie Policy
             </a>
           </div>
         </div>

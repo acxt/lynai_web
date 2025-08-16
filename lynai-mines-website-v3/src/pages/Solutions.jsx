@@ -12,29 +12,29 @@ import geologicalSurvey from '../assets/search_images/4EwV62EsQrN1.jpg';
 const Solutions = () => {
   const technologies = [
     {
-      title: "大数据和AI分析",
+      title: "Big Data and AI Analytics",
       image: aiTechnology,
-      description: "用于精确矿物勘探和数据驱动决策的先进AI驱动分析。"
+      description: "Advanced AI-driven analytics for precise mineral exploration and data-driven decision making."
     },
     {
-      title: "环境噪声层析成像",
+      title: "Ambient Noise Tomography",
       image: undergroundMining,
-      description: "用于详细地下勘探和矿体检测的前沿地震成像技术。"
+      description: "Cutting-edge seismic imaging technology for detailed subsurface exploration and ore body detection."
     },
     {
-      title: "遥感技术",
+      title: "Remote Sensing",
       image: heroImage1,
-      description: "基于卫星和无人机的遥感技术，用于全面地质调查和分析。"
+      description: "Satellite and drone-based remote sensing technology for comprehensive geological surveys and analysis."
     },
     {
-      title: "地球化学分析",
+      title: "Geochemical Analysis",
       image: mineralSamples,
-      description: "先进的地球化学分析技术，用于准确的矿物识别和评估。"
+      description: "Advanced geochemical analysis techniques for accurate mineral identification and assessment."
     },
     {
-      title: "传统地质方法",
+      title: "Traditional Geological Methods",
       image: geologicalSurvey,
-      description: "经过时间验证的地质调查方法，结合现代AI和数据分析技术增强。"
+      description: "Time-tested geological survey methods enhanced with modern AI and data analytics."
     }
   ];
 
@@ -49,10 +49,10 @@ const Solutions = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
-              探索我们的技术和解决方案
+              Explore Our Technologies and Solutions
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              我们的AI驱动解决方案集成了深度学习、无人机勘探和被动地震技术等先进技术，优化矿物勘探和生产，显著提高效率并降低成本。
+              Our AI-driven solutions integrate advanced technologies like deep learning, drone-based exploration, and passive seismic technology to optimize mineral exploration and production, significantly enhancing efficiency and reducing costs.
             </p>
           </motion.div>
 
@@ -77,7 +77,7 @@ const Solutions = () => {
                   <h3 className="text-xl font-bold text-primary mb-3">{tech.title}</h3>
                   <p className="text-muted-foreground mb-4">{tech.description}</p>
                   <button className="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2">
-                    了解更多
+                    Learn More
                     <ArrowRight size={16} />
                   </button>
                 </div>
@@ -97,9 +97,9 @@ const Solutions = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">客户反馈</h2>
+            <h2 className="text-4xl font-bold gradient-text mb-6">Client Feedback</h2>
             <p className="text-xl text-muted-foreground">
-              用AI驱动的解决方案改变采矿业，实现精确和高效。
+              Transforming mining with AI-driven solutions for precision and efficiency.
             </p>
           </motion.div>
 
@@ -117,7 +117,7 @@ const Solutions = () => {
                 ))}
               </div>
               <p className="text-muted-foreground mb-4">
-                "LynAI MINES显著改善了我们的矿物勘探流程。强烈推荐！"
+                "LynAI MINES has significantly improved our mineral exploration processes. Highly recommended!"
               </p>
               <p className="font-semibold">John Smith</p>
             </motion.div>
@@ -135,7 +135,7 @@ const Solutions = () => {
                 ))}
               </div>
               <p className="text-muted-foreground mb-4">
-                "LynAI MINES的AI和遥感技术集成革命性地改变了我们的运营，提供了以前无法获得的洞察。真正改变了采矿业的游戏规则！"
+                "The integration of AI and remote sensing by LynAI MINES has revolutionized our operations, providing insights that were previously unattainable. Truly a game changer in mining!"
               </p>
               <p className="font-semibold">William Morrell</p>
               <p className="text-sm text-muted-foreground">Armour Energy Limited, CTO</p>

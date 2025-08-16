@@ -17,10 +17,10 @@ const About = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
-              引领矿物勘探创新
+              Leading Innovation in Mineral Exploration
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              释放AI在可持续和精确矿物发现中的力量
+              Unleashing the Power of AI for Sustainable and Accurate Mineral Discovery
             </p>
           </motion.div>
 
@@ -30,12 +30,12 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-bold mb-6">AI驱动矿物勘探的专家领导力</h2>
+              <h2 className="text-3xl font-bold mb-6">Expert Leadership in AI-Driven Mineral Exploration</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                LynAI MINES汇集了世界知名科学家、行业资深专家和技术创新者的卓越团队。我们的领导团队在地质勘探、人工智能和矿物资源开发方面拥有数百年的集体经验。
+                LynAI MINES brings together an exceptional team of world-renowned scientists, industry veterans, and technology innovators. Our leadership team combines centuries of collective experience in geological exploration, artificial intelligence, and mineral resource development.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                在首席科学家兼创始人王宣策教授和非执行主席Simon Wilde教授的领导下，我们的科学团队代表了地质专业知识的顶峰。王教授拥有110多篇同行评议论文和锂、金勘探的突破性发现，与Wilde教授合作，后者是约翰·柯廷杰出教授，也是包括戈德施密特奖章在内的国际知名奖项的获得者。
+                Led by Professor Xuance Wang, our Chief Scientist and founder, and Professor Simon Wilde, our Non-Executive Chairman, our scientific team represents the pinnacle of geological expertise. Professor Wang, with over 110 peer-reviewed publications and breakthrough discoveries in lithium and gold exploration, works alongside Professor Wilde, a John Curtin Distinguished Professor and recipient of prestigious international awards including the Goldschmidt Medal.
               </p>
             </motion.div>
 
@@ -66,20 +66,20 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">我们的创新系统</h2>
+            <h2 className="text-4xl font-bold gradient-text mb-6">Our Innovative System</h2>
             <p className="text-xl text-muted-foreground">
-              由AI和大数据分析驱动的数字大脑，结合各种技术来收集和分析矿物系统信息
+              A digital brain powered by AI and big data analytics, combining various techniques to gather and analyze mineral system information
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              "AI与大数据分析",
-              "遥感技术",
-              "环境噪声层析成像技术",
-              "前沿地球化学分析",
-              "传统地球科学方法",
-              "矿山地质方法"
+              "AI & Big Data Analytics",
+              "Remote Sensing",
+              "Ambient Noise Tomography Technology",
+              "Cutting-edge Geochemistry Analysis",
+              "Traditional Geoscience Methods",
+              "Mining Geology Methods"
             ].map((tech, index) => (
               <motion.div
                 key={tech}
@@ -107,10 +107,10 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              通过先进AI变革采矿业
+              Transforming Mining Through Advanced AI
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              用前沿AI解决方案革新矿物勘探和生产，为可持续未来而努力
+              Revolutionizing mineral exploration and production with cutting-edge AI solutions for a sustainable future
             </p>
           </motion.div>
 
@@ -124,10 +124,10 @@ const About = () => {
             >
               <div className="flex items-center mb-4">
                 <Target className="w-8 h-8 text-primary mr-4" />
-                <h3 className="text-2xl font-bold text-primary">我们的使命</h3>
+                <h3 className="text-2xl font-bold text-primary">Our Mission</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                LynAI MINES的使命是通过突破性AI技术重新定义矿物勘探的效率和可持续性，为全球能源转型和工业发展提供智能和精确的资源保障。我们旨在推动采矿业走向全球化、数字化和智能化，同时降低勘探风险和成本，提高勘探效率，降低环境影响。
+                LynAI MINES' mission is to redefine the efficiency and sustainability of mineral exploration through breakthrough AI technology, providing intelligent and precise resource assurance for global energy transition and industrial development. We aim to drive the mining industry towards globalization, digitalization, and intelligence, while reducing exploration risks and costs, improving exploration efficiency, and lowering environmental impact.
               </p>
             </motion.div>
 
@@ -140,10 +140,10 @@ const About = () => {
             >
               <div className="flex items-center mb-4">
                 <Globe className="w-8 h-8 text-primary mr-4" />
-                <h3 className="text-2xl font-bold text-primary">我们的愿景</h3>
+                <h3 className="text-2xl font-bold text-primary">Our Vision</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                LynAI MINES的愿景是成为全球领先的AI驱动矿物勘探和生产公司，引领行业创新并建立智能采矿的全球标准。到2030年，我们致力于将GlobalAI平台发展为行业标准解决方案，建立全球服务网络，帮助客户将勘探成功率提高50%，实现整个勘探过程的智能化转型。
+                LynAI MINES' vision is to become the global leading AI-driven mineral exploration and production company, leading industry innovation and establishing the global standard for intelligent mining. By 2030, we aim to develop our GlobalAI platform into an industry standard solution, establish a global service network, help clients increase exploration success by 50%, and achieve intelligent transformation across the entire exploration process.
               </p>
             </motion.div>
           </div>

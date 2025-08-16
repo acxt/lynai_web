@@ -23,48 +23,48 @@ const TechnicalTeam = () => {
     {
       id: 1,
       name: "Prof. Xuan-Ce Wang",
-      title: "创始人兼首席科学家",
+      title: "Founder & Chief Scientist",
       image: "prof-wang-lab.jpg",
-      description: "Prof. Xuan-Ce Wang是LynAI MINES的创始人兼首席科学家。他拥有科廷大学、云南大学和昆士兰大学的教授职位。Wang教授领导了关键矿物实验室和高影响力项目，发表了超过150篇同行评议期刊文章，被引用超过12,000次，H指数为47。",
+      description: "Prof. Xuan-Ce Wang is the Founder and Chief Scientist of LynAI MINES. He holds professorships at Curtin University, Yunnan University, and the University of Queensland. Prof. Wang has led key critical mineral laboratories and high-impact projects, publishing over 150 peer-reviewed journal articles with more than 12,000 citations and an H-index of 47.",
       achievements: [
-        "发表150+篇同行评议期刊文章",
-        "获得超过600万澳元的竞争性研究资金", 
-        "开发了AI数据勘探平台",
-        "地球科学大数据和Au-Li-Ni系统模型专家"
+        "Published 150+ peer-reviewed journal articles",
+        "Secured over AUD 6 million in competitive research funding", 
+        "Developed AI Data Prospecting Platform",
+        "Expert in geoscience big data and Au-Li-Ni system models"
       ],
-      expertise: ["地球科学大数据", "AI勘探模型", "关键矿物研究", "成本降低系统"],
+      expertise: ["Geoscience Big Data", "AI Exploration Models", "Critical Mineral Research", "Cost Reduction Systems"],
       contact: "x.wang4@uq.edu.au",
       background: "mountain-range"
     },
     {
       id: 2,
       name: "Prof. Simon Wilde",
-      title: "非执行主席",
+      title: "Non-Executive Chairman",
       image: "prof-wilde-business.jpg", 
-      description: "Simon Wilde教授是全球公认的地球科学专家，拥有科廷大学应用地质学John Curtin杰出教授称号，是ARC核心到地壳流体系统卓越中心的首席研究员。凭借40多年的经验，他在地质年代学、地球动力学和地球演化方面做出了重大贡献。",
+      description: "Professor Simon Wilde, a globally recognized expert in earth science, holds the title of John Curtin Distinguished Professor of Applied Geology at Curtin University and is a principal investigator at the ARC Centre of Excellence for Core to Crust Fluid Systems. With over four decades of experience, he has made significant contributions to geochronology, geodynamics, and earth evolution.",
       achievements: [
-        "获得Goldschmidt、Urey和Houtermans奖",
-        "40+年地球科学研究经验",
-        "国际知名的地质年代学专家",
-        "ARC卓越中心首席研究员"
+        "Recipient of Goldschmidt, Urey and Houtermans Awards",
+        "40+ years of earth science research experience",
+        "Internationally renowned geochronology expert",
+        "Principal investigator at ARC Centre of Excellence"
       ],
-      expertise: ["地质年代学", "地球动力学", "地球演化", "国际合作"],
+      expertise: ["Geochronology", "Geodynamics", "Earth Evolution", "International Collaboration"],
       contact: "simon.wilde@curtin.edu.au",
       background: "contour-lines"
     },
     {
       id: 3,
       name: "Dr. Linhai Jing",
-      title: "遥感地质专家",
+      title: "Remote Sensing Geology Expert",
       image: "dr-jing-field.jpg",
-      description: "Dr. Linhai Jing是遥感地质勘探、高分辨率遥感图像处理和森林遥感方面的杰出研究员。中科院\"百人计划\"入选者。他发表了62篇英文SCI论文，拥有7项专利和7项软件著作权。",
+      description: "Dr. Linhai Jing is a distinguished researcher specializing in remote sensing geology exploration, high-resolution remote sensing image processing, and forest remote sensing. An appointee under the \"Hundred Talents\" program of the Chinese Academy of Sciences. He has published 62 English SCI papers, holds 7 patents, and 7 software copyrights.",
       achievements: [
-        "发表62篇英文SCI论文",
-        "拥有7项专利和7项软件著作权",
-        "发现超过40个矿床（Cu、Pb、Zn、Au、Li）",
-        "中科院\"百人计划\"入选者"
+        "Published 62 English SCI papers",
+        "Holds 7 patents and 7 software copyrights",
+        "Discovered over 40 mineral deposits (Cu, Pb, Zn, Au, Li)",
+        "Chinese Academy of Sciences \"Hundred Talents\" Program Appointee"
       ],
-      expertise: ["遥感地质勘探", "高分辨率图像处理", "覆盖区勘探方法", "高山地区勘探"],
+      expertise: ["Remote Sensing Geology", "High-resolution Image Processing", "Covered Area Exploration", "Alpine Region Exploration"],
       contact: "linhai.jing@example.com",
       background: "drilling-pattern"
     }
@@ -73,40 +73,40 @@ const TechnicalTeam = () => {
   const coreTeam = [
     {
       name: "Professor Yingjie Yang",
-      title: "被动地震学主管",
-      description: "环境噪声层析成像方法的主要创始人之一，被评为世界前2%科学家和中国高被引学者。",
-      expertise: ["环境噪声层析成像", "地震学", "地下结构成像"],
-      achievements: ["世界前2%科学家", "高被引学者"],
+      title: "Chief of Passive Seismology",
+      description: "One of the principal founders of the ambient noise tomography method, ranked among the World's Top 2% Scientists and a highly cited scholar in China.",
+      expertise: ["Ambient Noise Tomography", "Seismology", "Subsurface Structure Imaging"],
+      achievements: ["World's Top 2% Scientist", "Highly Cited Scholar"],
       background: "purple-pink-gradient"
     },
     {
       name: "Mr. Yunbo Ge",
-      title: "采矿生产主管",
-      description: "C2 Mining International执行副总裁，拥有13年国际采矿运营经验。战略矿山规划和价值优化专家。",
-      expertise: ["战略矿山规划", "价值优化", "生产效率提升", "国际采矿运营"],
-      achievements: ["13年国际经验", "显著提升生产效率"],
+      title: "Chief of Mining Production",
+      description: "Executive Vice President at C2 Mining International with 13 years in international mining operations. Expert in strategic mine planning and value optimization, significantly enhancing production efficiency.",
+      expertise: ["Strategic Mine Planning", "Value Optimization", "Production Efficiency Enhancement", "International Mining Operations"],
+      achievements: ["13 years of international experience", "Significantly enhanced production efficiency"],
       background: "mountain-range"
     },
     {
       name: "Professor Qijun Yang", 
-      title: "构造地质学主管",
-      description: "以其在构造分析和前寒武纪地质学方面的专长而闻名。领导了30多个矿物勘探项目。",
-      expertise: ["构造分析", "前寒武纪地质学", "构造控制金矿床", "矿物勘探"],
-      achievements: ["30+勘探项目", "构造控制金矿床先驱研究"],
+      title: "Chief of Structural Geology",
+      description: "Renowned for his expertise in structural analysis and Precambrian geology. Led over 30 mineral exploration projects, pioneering research in structure-controlled gold deposits.",
+      expertise: ["Structural Analysis", "Precambrian Geology", "Structure-controlled Gold Deposits", "Mineral Exploration"],
+      achievements: ["30+ exploration projects", "Pioneering structure-controlled gold deposits research"],
       background: "contour-lines"
     },
     {
       name: "Mr. Wenhong Jin",
-      title: "勘探主管",
-      description: "拥有32年全球勘探经验，包括多个金矿床发现和国际项目评估。Huakan International Mining Inc.和Wildsky Resources Inc.首席执行官。",
-      expertise: ["全球勘探", "金矿床发现", "项目评估", "国际业务"],
-      achievements: ["32年全球经验", "多个金矿床发现"],
+      title: "Chief of Exploration",
+      description: "Brings 32 years of global exploration experience, including multiple gold deposits and international project evaluations. CEO at Huakan International Mining Inc. and Wildsky Resources Inc.",
+      expertise: ["Global Exploration", "Gold Deposit Discovery", "Project Evaluation", "International Business"],
+      achievements: ["32 years of global experience", "Multiple gold deposit discoveries"],
       background: "drilling-pattern"
     },
     {
       name: "Mr. Jiaxu Tang",
-      title: "AI专家",
-      description: "为西澳大利亚Yilgarn克拉通开发了造山带金勘探垂直模型。正在进行使用大规模遥感模型的自动岩性识别和锂勘探研究。",
+      title: "AI Expert",
+      description: "Developed an orogenic gold exploration vertical model for the Yilgarn Craton in Western Australia. Conducting ongoing research on automatic lithology identification and lithium exploration using large-scale remote sensing models.",
       expertise: ["AI勘探模型", "岩性识别", "锂勘探", "遥感模型"],
       achievements: ["造山带金勘探模型", "自动岩性识别研究"],
       background: "purple-pink-gradient"
@@ -139,10 +139,10 @@ const TechnicalTeam = () => {
   ];
 
   const stats = [
-    { icon: <Users className="w-8 h-8" />, number: "15+", label: "核心专家" },
-    { icon: <BookOpen className="w-8 h-8" />, number: "200+", label: "发表论文" },
-    { icon: <Award className="w-8 h-8" />, number: "20+", label: "国际奖项" },
-    { icon: <Globe className="w-8 h-8" />, number: "40+", label: "年经验" }
+    { icon: <Users className="w-8 h-8" />, number: "15+", label: "Core Experts" },
+    { icon: <BookOpen className="w-8 h-8" />, number: "200+", label: "Published Papers" },
+    { icon: <Award className="w-8 h-8" />, number: "20+", label: "International Awards" },
+    { icon: <Globe className="w-8 h-8" />, number: "40+", label: "Years Experience" }
   ];
 
   return (
@@ -169,14 +169,13 @@ const TechnicalTeam = () => {
             className="space-y-8"
           >
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="gradient-text">勘探专业团队</span>
+              <span className="gradient-text">Expertise in Exploration</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary font-semibold">
-              我们的领导团队在AI驱动的矿物勘探和地质资源开发方面表现卓越
+              Our leadership team excels in AI-driven mineral exploration and geological resource development
             </p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              我们汇聚了世界一流的科学家、行业资深人士和技术创新者。我们的领导团队在地质勘探、
-              人工智能和矿物资源开发方面拥有数百年的集体经验。
+              We bring together world-class scientists, industry veterans, and technology innovators. Our leadership team combines centuries of collective experience in geological exploration, artificial intelligence, and mineral resource development.
             </p>
           </motion.div>
         </div>

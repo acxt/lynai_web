@@ -26,13 +26,13 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // 模拟表单提交
+    // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     setIsSubmitting(false);
     setSubmitted(true);
     
-    // 重置表单
+    // Reset form
     setTimeout(() => {
       setSubmitted(false);
       setFormData({
@@ -58,10 +58,10 @@ const Contact = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
-              联系我们
+              Contact Us
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              准备开始您的AI驱动矿物勘探之旅？联系我们的专家团队，了解我们的解决方案如何革新您的业务
+              Ready to start your AI-driven mineral exploration journey? Contact our expert team to learn how our solutions can transform your business.
             </p>
           </motion.div>
         </div>
@@ -79,9 +79,9 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold gradient-text mb-6">联系信息</h2>
+                <h2 className="text-3xl font-bold gradient-text mb-6">Contact Information</h2>
                 <p className="text-muted-foreground mb-8">
-                  我们的专家团队随时准备帮助您了解我们的AI驱动解决方案如何优化您的矿物勘探项目。
+                  Our experts are ready to help you understand how our AI-driven solutions can optimize your mineral exploration projects.
                 </p>
               </div>
 
@@ -91,10 +91,10 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">地址</h3>
+                    <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      西澳大利亚州珀斯市<br />
-                      科廷大学科技园区
+                      Perth, Western Australia<br />
+                      Curtin University Technology Park
                     </p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">电话</h3>
+                    <h3 className="font-semibold mb-1">Phone</h3>
                     <p className="text-muted-foreground">+61 8 9266 9266</p>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">邮箱</h3>
+                    <h3 className="font-semibold mb-1">Email</h3>
                     <p className="text-muted-foreground">info@lynaimines.com</p>
                   </div>
                 </div>
@@ -124,10 +124,10 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">营业时间</h3>
+                    <h3 className="font-semibold mb-1">Business Hours</h3>
                     <p className="text-muted-foreground">
-                      周一至周五: 9:00 AM - 6:00 PM (AWST)<br />
-                      周末及节假日请预约
+                      Mon–Fri: 9:00 AM – 6:00 PM (AWST)<br />
+                      Weekends & public holidays by appointment
                     </p>
                   </div>
                 </div>
@@ -135,16 +135,16 @@ const Contact = () => {
 
               {/* Quick Contact Options */}
               <div className="bg-card/50 backdrop-blur-sm p-6 rounded-xl border border-border">
-                <h3 className="font-semibold mb-4">快速联系方式</h3>
+                <h3 className="font-semibold mb-4">Quick Actions</h3>
                 <div className="space-y-3">
                   <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 px-4 rounded-lg font-medium transition-colors">
-                    预约技术咨询
+                    Book a Technical Consultation
                   </button>
                   <button className="w-full bg-secondary hover:bg-secondary/80 text-secondary-foreground py-3 px-4 rounded-lg font-medium transition-colors">
-                    申请产品演示
+                    Request a Product Demo
                   </button>
                   <button className="w-full border border-border hover:bg-card/70 py-3 px-4 rounded-lg font-medium transition-colors">
-                    下载技术白皮书
+                    Download the Whitepaper
                   </button>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="bg-card/50 backdrop-blur-sm p-8 rounded-xl border border-border">
-                <h2 className="text-2xl font-bold mb-6">发送消息</h2>
+                <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
                 
                 {submitted ? (
                   <motion.div
@@ -166,9 +166,9 @@ const Contact = () => {
                     className="text-center py-8"
                   >
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-green-500 mb-2">消息发送成功！</h3>
+                    <h3 className="text-xl font-semibold text-green-500 mb-2">Message Sent!</h3>
                     <p className="text-muted-foreground">
-                      我们将在24小时内回复您的询问。
+                      We’ll get back to you within 24 hours.
                     </p>
                   </motion.div>
                 ) : (
@@ -176,7 +176,7 @@ const Contact = () => {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
-                          姓名 *
+                          Name *
                         </label>
                         <input
                           type="text"
@@ -186,12 +186,12 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                          placeholder="请输入您的姓名"
+                          placeholder="Enter your name"
                         />
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
-                          邮箱 *
+                          Email *
                         </label>
                         <input
                           type="email"
@@ -201,7 +201,7 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                          placeholder="请输入您的邮箱"
+                          placeholder="Enter your email"
                         />
                       </div>
                     </div>
@@ -209,7 +209,7 @@ const Contact = () => {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="company" className="block text-sm font-medium mb-2">
-                          公司名称
+                          Company
                         </label>
                         <input
                           type="text"
@@ -218,12 +218,12 @@ const Contact = () => {
                           value={formData.company}
                           onChange={handleChange}
                           className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                          placeholder="请输入公司名称"
+                          placeholder="Enter company name"
                         />
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                          联系电话
+                          Phone
                         </label>
                         <input
                           type="tel"
@@ -232,14 +232,14 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                          placeholder="请输入联系电话"
+                          placeholder="Enter phone number"
                         />
                       </div>
                     </div>
 
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                        主题 *
+                        Subject *
                       </label>
                       <select
                         id="subject"
@@ -249,19 +249,19 @@ const Contact = () => {
                         required
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                       >
-                        <option value="">请选择咨询主题</option>
-                        <option value="product-demo">产品演示</option>
-                        <option value="technical-consultation">技术咨询</option>
-                        <option value="partnership">合作洽谈</option>
-                        <option value="pricing">价格咨询</option>
-                        <option value="support">技术支持</option>
-                        <option value="other">其他</option>
+                        <option value="">Please select a subject</option>
+                        <option value="product-demo">Product Demo</option>
+                        <option value="technical-consultation">Technical Consultation</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="support">Support</option>
+                        <option value="other">Other</option>
                       </select>
                     </div>
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium mb-2">
-                        详细信息 *
+                        Details *
                       </label>
                       <textarea
                         id="message"
@@ -271,7 +271,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                        placeholder="请详细描述您的需求或问题..."
+                        placeholder="Please describe your needs or questions in detail..."
                       />
                     </div>
 
@@ -283,12 +283,12 @@ const Contact = () => {
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-foreground"></div>
-                          发送中...
+                          Sending...
                         </>
                       ) : (
                         <>
                           <Send className="w-4 h-4" />
-                          发送消息
+                          Send Message
                         </>
                       )}
                     </button>
@@ -310,9 +310,9 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold gradient-text mb-6">我们的位置</h2>
+            <h2 className="text-3xl font-bold gradient-text mb-6">Our Location</h2>
             <p className="text-muted-foreground">
-              位于西澳大利亚珀斯，处于全球矿业中心
+              Based in Perth, Western Australia — a global mining hub
             </p>
           </motion.div>
 
@@ -326,9 +326,9 @@ const Contact = () => {
             <div className="h-96 bg-muted/20 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">交互式地图</h3>
+                <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
                 <p className="text-muted-foreground">
-                  地图功能将在生产环境中集成
+                  Map will be integrated in production
                 </p>
               </div>
             </div>

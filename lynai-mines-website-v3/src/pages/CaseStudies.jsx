@@ -18,12 +18,12 @@ import PlaceholderMedia from '../components/ui/PlaceholderMedia';
 
 const CaseStudies = () => {
   const mainCase = {
-    title: "AI驱动的矿物勘探革命性地改变了西澳大利亚的资源发现",
-    description: "通过先进的AI技术和数据分析，我们在西澳大利亚成功实现了多个突破性发现，展示了人工智能在现代矿物勘探中的巨大潜力。",
-    location: "西澳大利亚州",
+    title: "AI-Powered Mineral Exploration Revolutionizes Resource Discovery in Western Australia",
+    description: "Through advanced AI technology and data analysis, we have successfully achieved multiple breakthrough discoveries in Western Australia, demonstrating the enormous potential of artificial intelligence in modern mineral exploration.",
+    location: "Western Australia",
     achievements: [
-      { icon: <Trophy className="w-6 h-6" />, text: "成功发现多个高价值矿床" },
-      { icon: <TrendingUp className="w-6 h-6" />, text: "勘探效率提升60%以上" },
+      { icon: <Trophy className="w-6 h-6" />, text: "Successfully discovered multiple high-value deposits" },
+      { icon: <TrendingUp className="w-6 h-6" />, text: "Exploration efficiency improved by over 60%" },
       { icon: <DollarSign className="w-6 h-6" />, text: "总项目价值超过1亿澳元" },
       { icon: <Clock className="w-6 h-6" />, text: "勘探周期缩短50%" }
     ]
