@@ -34,11 +34,10 @@ const Home = () => {
               <span className="gradient-text">LynAI MINES</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary font-semibold">
-              用AI革新矿物勘探
+              Revolutionizing Mineral Exploration with AI
             </p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              我们公司处于利用AI和数据驱动决策系统革新采矿业的前沿。通过整合先进技术和科学方法，
-              我们在勘探和投资决策中提供无与伦比的准确性和信心。
+              Our company is at the forefront of utilizing AI and data-driven decision-making systems to revolutionize the mining industry. By integrating advanced technology and scientific methods, we provide unparalleled accuracy and confidence in exploration and investment decisions.
             </p>
             
             {/* CTA Buttons */}
@@ -49,7 +48,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link to="/solutions" className="flex items-center gap-2">
-                  探索我们的解决方案
+                  Explore Our Solutions
                   <ArrowRight size={20} />
                 </Link>
               </motion.button>
@@ -59,7 +58,7 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link to="/contact" className="flex items-center gap-2">
-                  联系我们
+                  Contact Us
                 </Link>
               </motion.button>
             </div>
@@ -75,10 +74,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: <Globe className="w-8 h-8" />, number: "1001+", label: "全球覆盖" },
-              { icon: <Users className="w-8 h-8" />, number: "15", label: "专家团队" },
-              { icon: <Building2 className="w-8 h-8" />, number: "50+", label: "成功项目" },
-              { icon: <MapPin className="w-8 h-8" />, number: "20+", label: "服务国家" }
+              { icon: <Globe className="w-8 h-8" />, number: "1001+", label: "Global Reach" },
+              { icon: <Users className="w-8 h-8" />, number: "15", label: "Expert Team" },
+              { icon: <Building2 className="w-8 h-8" />, number: "50+", label: "Successful Projects" },
+              { icon: <MapPin className="w-8 h-8" />, number: "20+", label: "Countries Served" }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -112,7 +111,7 @@ const Home = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl font-bold text-muted-foreground mb-8">
-              受到全球领先企业信赖
+              Trusted by Leading Global Enterprises
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               {/* 占位品牌logo - 这些将被实际的合作伙伴logo替换 */}
@@ -140,10 +139,10 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              我们的核心价值
+              Our Core Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              通过先进的AI技术和数据分析，为矿物勘探提供革命性解决方案
+              Providing revolutionary solutions for mineral exploration through advanced AI technology and data analysis
             </p>
           </motion.div>
 
@@ -151,18 +150,18 @@ const Home = () => {
             {[
               {
                 icon: <Zap className="w-12 h-12" />,
-                title: "效率优化",
-                description: "通过AI驱动的分析，显著缩短勘探周期，降低成本，提高资源利用率"
+                title: "Efficiency Optimization",
+                description: "Significantly reduce exploration cycles, lower costs, and improve resource utilization through AI-driven analysis"
               },
               {
                 icon: <Shield className="w-12 h-12" />,
-                title: "风险控制",
-                description: "精确的数据分析和预测模型，最大化降低勘探风险，提高成功率"
+                title: "Risk Control",
+                description: "Maximize risk reduction and improve success rates through precise data analysis and predictive models"
               },
               {
                 icon: <Target className="w-12 h-12" />,
-                title: "可持续发展",
-                description: "环保的勘探方法，支持绿色转型，促进负责任的采矿实践"
+                title: "Sustainable Development",
+                description: "Environmentally friendly exploration methods supporting green transformation and responsible mining practices"
               }
             ].map((value, index) => (
               <motion.div
@@ -194,9 +193,9 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">客户评价</h2>
+            <h2 className="text-4xl font-bold gradient-text mb-6">Customer Testimonials</h2>
             <p className="text-xl text-muted-foreground">
-              了解我们的客户如何通过我们的AI解决方案实现成功
+              Learn how our clients achieve success through our AI solutions
             </p>
           </motion.div>
 
@@ -205,19 +204,19 @@ const Home = () => {
               {
                 name: "John Smith",
                 company: "Global Mining Corp",
-                content: "LynAI MINES显著改善了我们的矿物勘探流程。强烈推荐！",
+                content: "LynAI MINES has significantly improved our mineral exploration processes. Highly recommended!",
                 rating: 5
               },
               {
                 name: "William Morrell",
                 company: "Armour Energy Limited, CTO",
-                content: "LynAI MINES的AI和遥感技术集成革命性地改变了我们的运营，提供了以前无法获得的洞察。真正改变了采矿业的游戏规则！",
+                content: "The integration of AI and remote sensing by LynAI MINES has revolutionized our operations, providing insights that were previously unattainable. Truly a game changer in mining!",
                 rating: 5
               },
               {
                 name: "Dr. Sarah Chen",
                 company: "Pacific Resources Ltd",
-                content: "他们的数据驱动方法帮助我们降低了40%的勘探成本，同时提高了发现率。",
+                content: "Their data-driven approach helped us reduce exploration costs by 40% while improving discovery rates.",
                 rating: 5
               }
             ].map((testimonial, index) => (
@@ -258,10 +257,10 @@ const Home = () => {
             className="space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text">
-              准备开始您的AI勘探之旅？
+              Ready to Start Your AI Exploration Journey?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              联系我们的专家团队，了解如何通过我们的AI解决方案革新您的矿物勘探流程
+              Contact our expert team to learn how our AI solutions can revolutionize your mineral exploration processes
             </p>
             <motion.button
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg glow-effect hover-lift inline-flex items-center gap-2"
@@ -269,7 +268,7 @@ const Home = () => {
               whileTap={{ scale: 0.95 }}
             >
               <Link to="/contact" className="flex items-center gap-2">
-                立即联系我们
+                Contact Us Now
                 <ArrowRight size={20} />
               </Link>
             </motion.button>

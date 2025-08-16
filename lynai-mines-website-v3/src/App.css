@@ -247,6 +247,10 @@
   background: linear-gradient(135deg, rgba(8, 8, 8, 0.9) 0%, rgba(20, 20, 20, 0.8) 50%, rgba(8, 8, 8, 0.9) 100%); /* 设置渐变背景 */
 }
 
+.hero-backend-overlay {
+  background: linear-gradient(135deg, rgba(8, 8, 8, 0.5) 0%, rgba(20, 20, 20, 0.3) 50%, rgba(8, 8, 8, 0.5) 100%); /* hero背景矿场图片叠加层 */
+}
+
 .mining-texture {
   background-image: 
     radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
@@ -266,12 +270,50 @@
     radial-gradient(ellipse at bottom, rgba(255, 119, 48, 0.12) 0%, transparent 70%); /* 添加岩石纹理 */
 }
 
+.mineral-texture {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 206, 84, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(255, 119, 48, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(120, 119, 198, 0.08) 0%, transparent 40%); /* 矿物纹理 */
+}
+
+.desert-landscape {
+  background: linear-gradient(180deg, 
+    rgba(135, 206, 235, 0.1) 0%, /* 蓝天 */
+    rgba(255, 215, 0, 0.05) 40%, /* 金色过渡 */
+    rgba(255, 160, 60, 0.08) 70%, /* 沙漠色调 */
+    rgba(139, 69, 19, 0.1) 100%); /* 地面 */
+}
+
+.mountain-range {
+  background: 
+    linear-gradient(135deg, rgba(255, 119, 48, 0.1) 0%, rgba(255, 69, 0, 0.05) 100%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L40 30L30 60L20 30Z' fill='rgba(255,206,84,0.03)'/%3E%3C/svg%3E"); /* 山脉图案 */
+}
+
+.contour-lines {
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(255, 206, 84, 0.03) 25%, rgba(255, 206, 84, 0.03) 26%, transparent 27%, transparent 74%, rgba(255, 206, 84, 0.03) 75%, rgba(255, 206, 84, 0.03) 76%, transparent 77%),
+    linear-gradient(90deg, transparent 24%, rgba(255, 119, 48, 0.03) 25%, rgba(255, 119, 48, 0.03) 26%, transparent 27%, transparent 74%, rgba(255, 119, 48, 0.03) 75%, rgba(255, 119, 48, 0.03) 76%, transparent 77%); /* 等高线背景 */
+  background-size: 60px 60px;
+}
+
+.drilling-pattern {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(120, 119, 198, 0.05) 10px, rgba(120, 119, 198, 0.05) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255, 206, 84, 0.05) 10px, rgba(255, 206, 84, 0.05) 20px); /* 钻探图案 */
+}
+
 .glow-effect {
   box-shadow: 0 0 20px rgba(255, 206, 84, 0.3), 0 0 40px rgba(255, 206, 84, 0.1); /* 设置发光效果 */
 }
 
 .tech-glow {
   box-shadow: 0 0 15px rgba(120, 119, 198, 0.4), 0 0 30px rgba(120, 119, 198, 0.2); /* 设置技术光效 */
+}
+
+.purple-glow {
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.3), 0 0 40px rgba(147, 51, 234, 0.1); /* 紫色发光效果 */
 }
 
 .mountain-silhouette {
@@ -283,14 +325,41 @@
   animation: laser-pulse 3s ease-in-out infinite; /* 定义激光光束的脉冲动画 */
 }
 
+.light-beam {
+  background: linear-gradient(45deg, transparent 0%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 206, 84, 0.2) 50%, rgba(255, 255, 255, 0.1) 70%, transparent 100%); /* 光束效果 */
+  animation: beam-sweep 4s ease-in-out infinite; /* 光束扫描动画 */
+}
+
 @keyframes laser-pulse {
   0%, 100% { opacity: 0.3; transform: scaleX(0.8); }  /* 初始和结束时的透明度和缩放 */
   50% { opacity: 1; transform: scaleX(1.2); }  /* 中间时的透明度和缩放 */
 }
 
+@keyframes beam-sweep {
+  0%, 100% { transform: translateX(-100%) rotate(45deg); opacity: 0; }
+  50% { transform: translateX(100vw) rotate(45deg); opacity: 0.6; }
+}
+
 .data-visualization {
   background: linear-gradient(135deg, rgba(120, 119, 198, 0.1) 0%, rgba(255, 119, 48, 0.1) 100%); /* 数据可视化的渐变背景 */
   border: 1px solid rgba(255, 206, 84, 0.2); /* 设置数据可视化的边框 */
+}
+
+.purple-pink-gradient {
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); /* 紫色粉色渐变 */
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.full-screen-hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* =======================
