@@ -16,7 +16,7 @@ const Blog = () => {
     setPosts(allPosts);
     setFilteredPosts(allPosts);
 
-    // 提取所有分类
+    // Extract all categories
     const uniqueCategories = [...new Set(allPosts.map(post => post.frontmatter.category).filter(Boolean))];
     setCategories(uniqueCategories);
   }, []);
@@ -24,7 +24,7 @@ const Blog = () => {
   useEffect(() => {
     let filtered = posts;
 
-    // 搜索过滤
+    // Search filter
     if (searchTerm) {
       filtered = filtered.filter(post =>
         post.frontmatter.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -33,7 +33,7 @@ const Blog = () => {
       );
     }
 
-    // 分类过滤
+    // Category filter
     if (selectedCategory !== 'all') {
       filtered = filtered.filter(post => post.frontmatter.category === selectedCategory);
     }
@@ -66,10 +66,10 @@ const Blog = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
-              行业洞察博客
+              Industry Insights Blog
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              探索AI驱动的矿物勘探最新趋势、技术创新和行业分析
+              Explore the latest trends, technical innovations, and industry analysis in AI-driven mineral exploration.
             </p>
           </motion.div>
 
@@ -81,25 +81,25 @@ const Blog = () => {
             className="max-w-4xl mx-auto mb-16"
           >
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              {/* 搜索框 */}
+              {/* Search box */}
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
                 <input
                   type="text"
-                  placeholder="搜索文章..."
+                  placeholder="Search articles..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-card/50 backdrop-blur-sm border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
 
-              {/* 分类筛选 */}
+              {/* Category filter */}
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="w-full px-4 py-3 bg-card/50 backdrop-blur-sm border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <option value="all">所有分类</option>
+                <option value="all">All categories</option>
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
                 ))}
@@ -120,7 +120,7 @@ const Blog = () => {
               viewport={{ once: true }}
               className="mb-12"
             >
-              <h2 className="text-3xl font-bold gradient-text mb-8">精选文章</h2>
+              <h2 className="text-3xl font-bold gradient-text mb-8">Featured Post</h2>
               <div className="bg-card/50 backdrop-blur-sm rounded-xl border border-border overflow-hidden hover-lift">
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="relative h-64 lg:h-auto">
@@ -134,7 +134,7 @@ const Blog = () => {
                   <div className="p-8">
                     <div className="flex items-center gap-4 mb-4">
                       <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                        精选
+                        Featured
                       </span>
                       {featuredPost.frontmatter.category && (
                         <span className="text-primary text-sm font-medium">
@@ -154,14 +154,14 @@ const Blog = () => {
                         </div>
                         <div className="flex items-center gap-1">
                           <Clock className="w-4 h-4" />
-                          {getReadingTime(featuredPost.content)} 分钟阅读
+                          {getReadingTime(featuredPost.content)} min read
                         </div>
                       </div>
                       <Link
                         to={`/blog/${featuredPost.slug}`}
                         className="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2"
                       >
-                        阅读全文
+                        Read more
                         <ArrowRight size={16} />
                       </Link>
                     </div>
@@ -185,10 +185,10 @@ const Blog = () => {
               className="text-center py-16"
             >
               <h3 className="text-2xl font-bold text-muted-foreground mb-4">
-                未找到匹配的文章
+                No matching posts found
               </h3>
               <p className="text-muted-foreground">
-                请尝试调整搜索条件或分类筛选
+                Try adjusting your search or category filters
               </p>
             </motion.div>
           ) : (
@@ -246,7 +246,7 @@ const Blog = () => {
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
-                        {getReadingTime(post.content)} 分钟
+                        {getReadingTime(post.content)} min
                       </div>
                     </div>
                     
@@ -254,7 +254,7 @@ const Blog = () => {
                       to={`/blog/${post.slug}`}
                       className="block mt-4 text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2"
                     >
-                      阅读全文
+                      Read more
                       <ArrowRight size={16} />
                     </Link>
                   </div>

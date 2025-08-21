@@ -21,57 +21,58 @@ import PlaceholderMedia from '../components/ui/PlaceholderMedia';
 
 const Events = () => {
   const mainEvent = {
-    title: "LynAI MINES创始人王宣策教授荣获全球地球科学界前2%科学家认可并加入亚洲科学编辑委员会",
-    date: "2025年2月12日",
-    location: "澳大利亚西澳州珀斯",
-    category: "重大认可",
-    summary: "王宣策教授获得全球科学界重要认可，进一步确立了LynAI MINES在地球科学AI领域的领导地位。"
+    title: "LynAI MINES Founder Prof. Xuance Wang Recognized Among Top 2% Scientists Globally and Joins the Asian Council of Science Editors",
+    date: "February 12, 2025",
+    location: "Perth, Western Australia",
+    category: "Major Recognition",
+    summary: "Prof. Xuance Wang receives significant international recognition, further establishing LynAI MINES as a leader in AI for geosciences."
   };
 
   const eventHighlights = [
     {
       icon: <Trophy className="w-8 h-8" />,
-      title: "全球前2%科学家",
-      description: "斯坦福大学和Elsevier编制的权威榜单认可"
+      title: "Global Top 2% Scientist",
+      description: "Recognized by the Stanford University & Elsevier data-driven list"
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
-      title: "亚洲科学编辑委员会",
-      description: "当选为ACSE成员，推动亚太地区学术出版发展"
+      title: "ACSE Membership",
+      description: "Elected to the Asian Council of Science Editors (ACSE)"
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "科学影响力",
-      description: "基于标准化引用影响、H指数等严格评估"
+      title: "Scientific Impact",
+      description: "Assessed via normalized citation impact, h-index, and related metrics"
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "国际贡献",
-      description: "促进全球科学发现的传播与合作"
+      title: "International Contribution",
+      description: "Advancing global knowledge exchange and collaboration"
     }
   ];
 
   const newsContent = [
     {
-      section: "全球科学影响力认可",
-      content: `王宣策教授在地球科学和地球化学领域的杰出研究获得国际认可，被评为全球前2%科学家。世界前2%科学家榜单是一个基于数据的排名，利用Scopus数据库，根据标准化引用影响、H指数、共同作者调整指数和单一作者指数等严格评估各学科科学家。这一认可突显了王教授在地质学和地球化学领域的重大影响力。`
+      section: "Recognition of Global Scientific Impact",
+      content: `Prof. Xuance Wang’s outstanding research in geosciences and geochemistry has been internationally recognized with inclusion among the world’s top 2% scientists. The list is a data-driven ranking based on the Scopus database and evaluates scholars across disciplines using metrics such as standardized citation impact, h-index, co-authorship-adjusted indices, and single-author indices. This recognition highlights Prof. Wang’s significant influence in geology and geochemistry.`
     },
     {
-      section: "为亚太地区学术出版做贡献",
-      content: `王教授当选亚洲科学编辑委员会(ACSE)成员，进一步证明了他对推进科学进步的承诺。ACSE是亚太地区的领先组织，在促进高质量学术出版、开放科学和跨学科研究合作方面发挥着重要作用。作为成员，王教授将在期刊编辑、研究诚信、数据共享和出版技术等领域贡献他的专业知识，促进亚洲科学发现的全球传播。`
+      section: "Contributions to Scholarly Publishing in Asia-Pacific",
+      content: `Prof. Wang has been elected to the Asian Council of Science Editors (ACSE), underscoring his commitment to advancing scientific progress. ACSE is a leading organization in the Asia-Pacific region that promotes high-quality scholarly publishing, open science, and cross-disciplinary collaboration. As a member, Prof. Wang will contribute expertise across journal editing, research integrity, data sharing, and publishing technologies to help disseminate scientific discoveries globally.`
     },
     {
-      section: "LynAI MINES：引领地球科学AI发展",
-      content: `由王教授创立的LynAI MINES正处于地球科学人工智能研究和开发的前沿。公司专门开发矿物勘探、资源评估和地质灾害预测的智能解决方案。通过利用大数据、深度学习和遥感技术的力量，LynAI MINES正在彻底改变矿物资源勘探的准确性和效率，推动全球地球科学行业的数字化转型。`
+      section: "LynAI MINES: Leading AI for Geosciences",
+      content: `Founded by Prof. Wang, LynAI MINES is at the forefront of AI-driven research and development in geosciences. The company builds intelligent solutions for mineral exploration, resource assessment, and geohazard prediction. By leveraging big data, deep learning, and remote sensing, LynAI MINES is transforming the accuracy and efficiency of mineral exploration and accelerating the digital transformation of the global geoscience industry.`
     },
     {
-      section: "未来承诺",
-      content: `LynAI MINES致力于推动AI驱动地球科学的边界。公司将继续投资于人工智能与地球科学数据集成的研究，促进智能地质勘探，支持矿物资源的可持续发展，并为创建数字化地球做出贡献。LynAI MINES致力于在全球地球科学研究和行业创新发展中发挥领导作用。`
+      section: "Looking Ahead",
+      content: `LynAI MINES is committed to pushing the boundaries of AI-driven geosciences. We will continue investing in the integration of AI and geoscience datasets to enable smarter exploration, support the sustainable development of mineral resources, and contribute to a more connected, digital Earth. Our goal is to lead both scientific research and industry innovation worldwide.`
     }
   ];
 
   const companyInfo = {
-    description: "LynAI MINES是AI驱动矿物勘探解决方案的全球领导者。使用尖端技术，包括AI、无人机系统、遥感和先进数据分析，LynAI MINES为矿物发现和资源优化提供精确、经济高效和可持续的解决方案。我们专有的GlobalAI平台提高了勘探成功率，降低了成本，加速了项目时间线，支持对关键矿物的全球需求和向可持续未来的转型。",
+    description:
+      "LynAI MINES is a global leader in AI-powered mineral exploration solutions. Using cutting-edge technologies—including AI, UAV systems, remote sensing, and advanced analytics—LynAI MINES delivers precise, cost-effective, and sustainable approaches for discovery and resource optimization. Our proprietary GlobalAI platform increases exploration success rates, reduces costs, and accelerates project timelines, supporting global demand for critical minerals and the transition to a sustainable future.",
     contact: {
       name: "Prof. Wang",
       email: "x.wang4@uq.edu.au"
@@ -81,30 +82,30 @@ const Events = () => {
   const relatedEvents = [
     {
       id: 1,
-      title: "AI矿物勘探技术研讨会",
-      date: "2025年3月15日",
-      location: "科廷大学",
-      type: "技术研讨会",
-      description: "深入探讨AI在现代矿物勘探中的应用和未来发展趋势",
-      status: "即将举行"
+      title: "AI in Mineral Exploration Workshop",
+      date: "March 15, 2025",
+      location: "Curtin University",
+      type: "Technical Workshop",
+      description: "Deep dive into current and future applications of AI in modern mineral exploration",
+      status: "Upcoming"
     },
     {
       id: 2,
-      title: "国际地球科学AI会议",
-      date: "2025年4月20-22日", 
-      location: "珀斯会议中心",
-      type: "国际会议",
-      description: "汇聚全球专家，分享AI在地球科学领域的最新突破",
-      status: "即将举行"
+      title: "International Geoscience AI Conference",
+      date: "Apr 20–22, 2025", 
+      location: "Perth Convention and Exhibition Centre",
+      type: "International Conference",
+      description: "Global experts share the latest breakthroughs in AI for geosciences",
+      status: "Upcoming"
     },
     {
       id: 3,
-      title: "可持续采矿创新论坛",
-      date: "2025年5月10日",
-      location: "在线会议",
-      type: "行业论坛",
-      description: "讨论环保技术在现代采矿业中的应用",
-      status: "报名开放"
+      title: "Sustainable Mining Innovation Forum",
+      date: "May 10, 2025",
+      location: "Online",
+      type: "Industry Forum",
+      description: "Exploring environmental technologies for modern mining",
+      status: "Registration Open"
     }
   ];
 
@@ -117,8 +118,8 @@ const Events = () => {
             type="image"
             width="w-full"
             height="h-full"
-            title="学术成就庆祝场景"
-            description="展示学术荣誉和科学成就的专业场景"
+            title="Academic Achievement Celebration"
+            description="A professional scene showcasing scientific honors and achievements"
             className="rounded-none"
           />
           <div className="absolute inset-0 hero-gradient"></div>
@@ -132,10 +133,10 @@ const Events = () => {
             className="space-y-8"
           >
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="gradient-text">重要活动</span>
+              <span className="gradient-text">Key Events</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary font-semibold">
-              记录我们的重要里程碑和行业认可
+              Tracking our major milestones and industry recognition
             </p>
             
             {/* Main Event Card */}
@@ -177,7 +178,7 @@ const Events = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              主要成就亮点
+              Key Highlights
             </h2>
           </motion.div>
 
@@ -213,10 +214,10 @@ const Events = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              新闻详情
+              News Details
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              详细了解这一重要里程碑的意义和影响
+              Learn more about the significance and impact of this milestone
             </p>
           </motion.div>
 
@@ -254,7 +255,7 @@ const Events = () => {
             className="bg-card/50 backdrop-blur-sm p-12 rounded-2xl border border-border"
           >
             <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold gradient-text mb-6">关于LynAI MINES</h2>
+              <h2 className="text-4xl font-bold gradient-text mb-6">About LynAI MINES</h2>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -264,7 +265,7 @@ const Events = () => {
             <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-4 flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>媒体联系</span>
+                <span>Media Contact</span>
               </h3>
               <div className="space-y-2">
                 <p className="font-semibold">{companyInfo.contact.name}</p>
@@ -286,10 +287,10 @@ const Events = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              即将举行的活动
+              Upcoming Events
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              参与我们的技术研讨会、会议和行业论坛
+              Join our workshops, conferences, and industry forums
             </p>
           </motion.div>
 
@@ -331,7 +332,7 @@ const Events = () => {
                   </p>
                   
                   <button className="w-full bg-primary/10 hover:bg-primary/20 text-primary px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2">
-                    <span>了解更多</span>
+                    <span>Learn More</span>
                     <ExternalLink className="w-4 h-4" />
                   </button>
                 </div>
@@ -352,17 +353,17 @@ const Events = () => {
             className="bg-card/50 backdrop-blur-sm p-12 rounded-2xl border border-border space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-bold gradient-text">
-              了解更多信息
+              Learn More
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              想了解更多关于我们的研究成果和行业影响？联系我们获取详细信息。
+              Want to know more about our research outcomes and industry impact? Contact us for details.
             </p>
             <motion.button
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg glow-effect hover-lift inline-flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              联系我们
+              Contact Us
               <ArrowRight size={20} />
             </motion.button>
           </motion.div>

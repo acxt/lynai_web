@@ -160,18 +160,18 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold gradient-text mb-6">团队实力</h2>
+            <h2 className="text-4xl font-bold gradient-text mb-6">Team Excellence</h2>
             <p className="text-xl text-muted-foreground">
-              汇聚全球顶尖专家，共同推动AI采矿技术发展
+              Bringing together world-class experts to advance AI mining technology
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { icon: <Users className="w-12 h-12" />, number: "15+", label: "专业团队成员" },
-              { icon: <Award className="w-12 h-12" />, number: "110+", label: "研究论文发表" },
-              { icon: <Globe className="w-12 h-12" />, number: "20+", label: "国际合作项目" },
-              { icon: <Target className="w-12 h-12" />, number: "50+", label: "成功案例" }
+              { icon: <Users className="w-12 h-12" />, number: "15+", label: "Professional Team Members" },
+              { icon: <Award className="w-12 h-12" />, number: "110+", label: "Research Publications" },
+              { icon: <Globe className="w-12 h-12" />, number: "20+", label: "International Projects" },
+              { icon: <Target className="w-12 h-12" />, number: "50+", label: "Success Cases" }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
